@@ -17,6 +17,9 @@ code:nth-child(1) {
   background: var(--color-primary);
 }
 
+background: fallback;
+background: custom;
+
 code:nth-child(2) {
   background:
     repeating-linear-gradient(
