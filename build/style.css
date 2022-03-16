@@ -1,36 +1,47 @@
-/*
-Variable --color-primary is imported from shared-variables.js and overridden in index.html
-*/
-
-code {
-  border: 0.1em solid #ddd;
-  color: green;
-  display: block;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-  padding: 0.5em;
+:root{
+  --color-primary-l:50%;
 }
 
-code:nth-child(1) {
-  background: #ff0000;
-  background: var(--color-primary);
+:root{
+  --color-primary-s:100%;
 }
 
-background: fallback;
-background: custom;
+:root{
+  --color-primary-h:0;
+}
 
-code:nth-child(2) {
-  background:
-    repeating-linear-gradient(
+:root{
+  --color-primary-hsl:0, 100%, 50%;
+}
+
+:root{
+  --color-primary:hsla(0, 100%, 50%, 100%);
+}
+
+code{
+  border:0.1em solid #ddd;
+  color:green;
+  display:block;
+  font-size:1.5em;
+  font-weight:bold;
+  margin-bottom:0.5em;
+  padding:0.5em;
+}
+
+code:nth-child(1){
+  background:hsla(0, 100%, 50%, 100%);
+  background:var(--color-primary);
+}
+
+code:nth-child(2){
+  background:repeating-linear-gradient(
       45deg,
-      #ff0000,
-      #ff0000 10px,
+      hsla(0, 100%, 50%, 100%),
+      hsla(0, 100%, 50%, 100%) 10px,
       white 10px,
       white 20px
     );
-  background:
-    repeating-linear-gradient(
+  background:repeating-linear-gradient(
       45deg,
       var(--color-primary),
       var(--color-primary) 10px,
@@ -39,7 +50,12 @@ code:nth-child(2) {
     );
 }
 
-code:nth-child(3) {
-  background: rgba(255, 0, 0, 0.5);
-  background: color(var(--color-primary) a(50%));
+code:nth-child(3){
+  background:hsla(0, 100%, 50%, 50%);
+  background:hsla(var(--color-primary-hsl), 50%);
+}
+
+code:nth-child(4){
+  background:hsla(0, 100%, 20%, 100%);
+  background:hsla(var(--color-primary-h), var(--color-primary-s), 20%, 100%);
 }
