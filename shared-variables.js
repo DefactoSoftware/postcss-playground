@@ -1,4 +1,4 @@
 module.exports = {
-  "--color-primary": "red",
-  "--color-text": "white"
+  "--color-primary": "#ff0000",
+  "--color-text": "green"
 };
