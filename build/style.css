@@ -1,3 +1,7 @@
+:root {
+  --color-primary: red;
+}
+
 /*
 Variable --color-primary is imported from shared-variables.js and overridden in index.html
 */
