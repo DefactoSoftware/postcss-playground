@@ -14,6 +14,7 @@
     "postcss-cli": "^9.1.0",
     "postcss-color-function": "^4.1.0",
     "postcss-css-variables": "^0.18.0",
-    "postcss-discard-comments": "^5.1.1"
+    "postcss-discard-comments": "^5.1.1",
+    "postcss-preset-env": "^7.4.2"
   }
 }

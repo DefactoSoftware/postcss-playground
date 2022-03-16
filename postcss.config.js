@@ -2,6 +2,9 @@ const variables = require("./shared-variables");
 
 module.exports = {
   plugins: {
+    "postcss-preset-env": {
+      stage: 0
+    },
     "postcss-discard-comments": {
       removeAll: true
     },
