@@ -1,0 +1,8 @@
+/*
+Variable --color-primary is imported from shared-variables.js and overridden in index.html
+*/
+
+body {
+  background: var(--color-primary);
+  color: var(--color-text);
+}

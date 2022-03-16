@@ -1,0 +1,18 @@
+{
+  "name": "postcss-playground",
+  "repository": "github:DefactoSoftware/postcss-playground",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "16.14.0"
+  },
+  "scripts": {
+    "build": "npx postcss src/**/*.css --base src --dir build",
+    "watch": "npx postcss src/**/*.css --base src --dir build --watch"
+  },
+  "dependencies": {
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "postcss-color-function": "^4.1.0",
+    "postcss-css-variables": "^0.18.0"
+  }
+}

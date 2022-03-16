@@ -1,0 +1,18 @@
+:root {
+  --color-text: white;
+}
+
+:root {
+  --color-primary: red;
+}
+
+/*
+Variable --color-primary is imported from shared-variables.js and overridden in index.html
+*/
+
+body {
+  background: red;
+  background: var(--color-primary);
+  color: white;
+  color: var(--color-text);
+}
